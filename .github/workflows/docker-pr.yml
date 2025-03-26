@@ -30,7 +30,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ghcr.io/techarohq/anubis
+          images: ghcr.io/gigirassy/anubis-but-blitzy
 
       - name: Build and push
         id: build
