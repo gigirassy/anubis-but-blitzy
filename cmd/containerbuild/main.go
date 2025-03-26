@@ -17,7 +17,7 @@ import (
 var (
 	dockerAnnotations = flag.String("docker-annotations", os.Getenv("DOCKER_METADATA_OUTPUT_ANNOTATIONS"), "Docker image annotations")
 	dockerLabels      = flag.String("docker-labels", os.Getenv("DOCKER_METADATA_OUTPUT_LABELS"), "Docker image labels")
-	dockerRepo        = flag.String("docker-repo", "registry.int.xeserv.us/techaro/anubis", "Docker image repository for Anubis")
+	dockerRepo        = flag.String("docker-repo", "ghcr.io/gigirassy/anubis-but-blitzy", "Docker image repository for Anubis")
 	dockerTags        = flag.String("docker-tags", os.Getenv("DOCKER_METADATA_OUTPUT_TAGS"), "newline separated docker tags including the registry name")
 	githubActor       = flag.String("github-actor", "", "GitHub actor")
 	githubEventName   = flag.String("github-event-name", "", "GitHub event name")
