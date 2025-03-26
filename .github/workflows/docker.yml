@@ -54,6 +54,6 @@ jobs:
         uses: actions/attest-build-provenance@v2
         if: ${{github.event_name == 'pull_request'}}
         with:
-          subject-name: ghcr.io/techarohq/anubis
+          subject-name: ghcr.io/gigirassy/anubis-but-blitzy
           subject-digest: ${{ steps.build.outputs.digest }}
           push-to-registry: true
