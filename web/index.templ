@@ -76,7 +76,9 @@ templ base(title string, body templ.Component, impressum *config.Impressum, chal
 	href="https://techaro.lol"
 >Techaro</a>. { localizer.T("made_with") }.
 						</p>
+						<p></p>
 						<p>Blitzwing art by TheMinttu.</p>
+						<p>If you have issues getting past this, let me know here: <a href="https://github.com/gigirassy/anubis-but-blitzy/issues">https://github.com/gigirassy/anubis-but-blitzy/issues</a></p>
 						if impressum != nil {
 							<p>
 								@templ.Raw(impressum.Footer)
