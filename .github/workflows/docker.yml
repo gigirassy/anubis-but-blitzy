@@ -76,10 +76,3 @@ jobs:
         env:
           DOCKER_REPO: ${{ env.IMAGE }}
           SLOG_LEVEL: debug
-
-      - name: Generate artifact attestation
-        uses: actions/attest-build-provenance@977bb373ede98d70efdf65b84cb5f73e068dcc2a # v3.0.0
-        with:
-          subject-name: ${{ env.IMAGE }}
-          subject-digest: ${{ steps.build.outputs.digest }}
-          push-to-registry: true
